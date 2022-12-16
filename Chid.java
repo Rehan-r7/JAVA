@@ -1,5 +1,7 @@
 /*define a class Base with data memebers string name,int age
-and members methods are getBaseData().showBaseData() define sub class child with data members string branch int semester and member methods are getChildData() showChildData child is sub class that is derived from base super class initialize an ob of child class and access all its members methods as well as member methods of super class to show the existece of inheritance among them implement this in java*/
+and members methods are getBaseData().showBaseData() define sub class child with data members string branch int semester and member methods 
+are getChildData() showChildData child is sub class that is derived from base super class initialize an ob of child class and access all its 
+members methods as well as member methods of super class to show the existece of inheritance among them implement this in java*/
 import java.util.Scanner;
 class Base
 {
