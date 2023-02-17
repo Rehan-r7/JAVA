@@ -1,0 +1,10 @@
+1. throw keyword 
+
+It is used to throw an exception
+
+**You cannot throw a Exception(Super class) only a 
+particular type of exception can be thrown
+ 
+2. throws keyword
+It declares a Exception(conditon) for a particular method
+
