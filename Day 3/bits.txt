@@ -1,0 +1,25 @@
+1.You cannot call a constructor in another function it can only be called in another constructor
+
+2.Packages import methodS : -
+
+// 1st method 
+import p1.*;		//step1
+p1.A1 ob1 = new p1.A1();	//step2
+
+// 2nd method 
+import p2.A2;//package with class name
+
+3. How to send .class file into their respective packages
+
+//Two methods
+Open cmd : - 
+
+a. javac -d(space) . (space) class_name.java //applicable for only one package/file
+
+b. javac -d(space) . (space) *.java//applicable for all packages/file in a respective folder
+
+4. How to set class path error! in cmd
+Open cmd : -
+
+set classpath=drive_path\(backslash)folder path\  
+
