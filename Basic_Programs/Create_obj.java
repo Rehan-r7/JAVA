@@ -5,7 +5,7 @@ public class Create_obj {
    
     public static void main(String args[]) {
    
-        object obj=new object();
+       Create_obj obj = new Create_obj();
         System.out.println(obj.x +"\t"+obj.y);
      
     }
