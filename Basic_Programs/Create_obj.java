@@ -1,4 +1,4 @@
-public class object {
+public class Create_obj {
    
    int x=10;
    int y=20;
