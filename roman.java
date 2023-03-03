@@ -95,9 +95,7 @@ public class roman {
                         rom += M;
                     }
 
-                } else {
-                    System.out.println("Please enter a correct roman number!!!!");
-                }
+                } 
 
             }
             System.out.println(rom);
