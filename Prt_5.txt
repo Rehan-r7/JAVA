@@ -1,0 +1,56 @@
+package com.servin;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class Fact extends HttpServlet{
+	protected void doPost(HttpServletRequest req,HttpServletResponse res) throws IOException
+	{
+		res.setContentType("text/html");
+		PrintWriter out = res.getWriter();
+		int num = Integer.parseInt(req.getParameter("fact"));
+		int sum =1;	
+		for(int i = num;i>=1;i--)
+			{
+				sum = sum*i ;
+			}
+		   out.print("<html><body>");
+		   out.println("<h1><b>This Is Servlet Page </b></h1><br>");
+		   out.println("<h1><b>Factorial of given number is "+sum+" </b></h1><br>");
+		   out.print("</html></body>");
+	}
+}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<form action="servin" method="post">
+			<tr>
+				<th>Enter a Number</th>
+				<td><input type="text" name="fact"></td>
+			</tr>
+			<tr>
+				<th><button>SUBMIT</button></th>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>
+
+<servlet>
+  <servlet-name>Fact</servlet-name>
+  <servlet-class>com.servin.Fact</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Fact</servlet-name>
+  <url-pattern>/servin</url-pattern>
+  </servlet-mapping>
