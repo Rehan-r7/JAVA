@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class MinMax {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the size of the Array :");
             int size = sc.nextInt();
             int A[] = new int[size];
             
