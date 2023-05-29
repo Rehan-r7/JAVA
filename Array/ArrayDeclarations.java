@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class arr{
+public class ArrayDeclarations{
 public static void main(String[] args) {
     try (Scanner sc = new Scanner(System.in)) {
         System.out.print("Enter the size of the Array 3 : ");
