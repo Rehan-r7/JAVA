@@ -8,7 +8,7 @@ public class Order {
             for (int i = 0; i < A.length; i++) {
                 A[i] = sc.nextInt();
             }
-            // Checking the Order i.e Ascending or Descending
+            // Checking the Order i.e Ascending or Not
             boolean check = true;
             for (int i = 0; i < A.length-1; i++) {
                 if(A[i] > A[i+1])
